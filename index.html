@@ -16,19 +16,33 @@
     <body>
 
         <header>
-          <div class="container">             
-            <nav>            
+          <nav class="navbar navbar-default navbar-fixed-top"> 
+            <div class="container">   
+              <div class="navbar-collapse collapse">                       
                 <ul class="nav nav-justified">
                   <li><a href="#">About the App</a></li>
                   <li><a href="#">Features</a></li>
                   <li><a href="#">Screenshots</a></li>
                   <li><a href="#">Download</a></li>
                   <li><a href="#">Support</a></li>                 
-                </ul>
-            </nav>        
-          </div>
+                </ul>                    
+              </div>                            
+            </div><!-- container div-->
+            
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                 <span class="sr-only"> Toggle Navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+              </button>
+              
+            </div><!-- navbar header div-->
+            
+          </nav>
         </header>
         
+        <!-- Sldier section using bootstrap carousel -->
         <section id="slider" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             
@@ -216,20 +230,35 @@
 
           <div class="container">
             <div class="row">
-                  <div class="col-sm-4">                    
-                    <img class="img-responsive" src="img/modal_tickets.png" alt="">                    
+                  <div class="col-sm-4">  
+                    <a href="#modal" data-toggle="modal" data-image-url="img/modal_tickets.png">
+                      <img class="img-responsive" src="img/modal_tickets.png" alt="">                      
+                    </a>                                      
                   </div>
 
-                  <div class="col-sm-4">                    
-                    <img class="img-responsive" src="img/modal_trailers.png" alt="">                    
+                  <div class="col-sm-4">                                     
+                    <a href="#modal" data-toggle="modal" data-image-url="img/modal_trailers.png">
+                      <img class="img-responsive" src="img/modal_trailers.png" alt="">                    
+                    </a>
                   </div>
 
-                  <div class="col-sm-4">                    
-                    <img class="img-responsive" src="img/modal_points.png" alt="">                    
+                  <div class="col-sm-4">
+                    <a href="#modal" data-toggle="modal" data-image-url="img/modal_points.png">
+                      <img class="img-responsive" src="img/modal_points.png" alt="">                                          
+                    </a>                                  
                   </div>                            
             </div><!-- Row div -->          
           </div><!-- container div -->
+          
+          <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labeleldby="modal" aria-hidden="true">
+            <div class="modal-body">
+                <img src="#">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>              
+            </div>            
+          </div>
         </section> <!-- Screenshots -->
+        
+        
         <section id="parallax" class="parallax">          
                   <h2 class="parallax text-center">Also available for iPad</h2>          
         </section><!--parallax section-->
