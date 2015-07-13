@@ -143,12 +143,26 @@ section#features {
   margin-bottom: 30px;
 }
 
-.modal-body {
-  text-align: center;
+section#parallax {
+  height: 500px;
+  background-image: url(../img/ipadApp.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
+.parallax h2 {
+  font-size: 3.6em;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 7px 8px black;
+  -webkit-text-shadow: 0 7px 8px black;
+  -moz-text-shadow: 0 7px 8px black;
+}
 
-
+.parallax h2:after {
+  display: none;
+}
 
 
 /* ==========================================================================
