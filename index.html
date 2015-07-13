@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/bootstrapValidator.css">
+        
         
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
@@ -357,14 +359,14 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-8 col-md-offset-2">
-                    <form id="form" action="">
+                    <form id="form" action="ajaxSubmit.php" class="form-horizontal">
                        
                          <div class="form-group">
-                           <input class="form-control" type="text" placeholder="Name" name="name"> 
+                           <input class="form-control" type="text" placeholder="Name" name="name" required> 
                          </div>
                          
                          <div class="form-group">
-                           <input class="form-control" type="email" placeholder="Email" name="email">                                                     
+                           <input class="form-control" type="email" placeholder="Email" name="email" required>                                                     
                          </div>
                          
                          <div class="form-group">
@@ -394,6 +396,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smooth-scroll.js"></script>
         <script src="js/jquery.waypoints.js"></script>
+        <script src="js/bootstrapValidator.js"></script>
 
         <script src="js/main.js"></script>
     </body>

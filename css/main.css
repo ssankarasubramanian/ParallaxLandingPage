@@ -340,8 +340,28 @@ footer p {
   animation-delay: .6s;
   -webkit-animation-delay: .6s;
 }
-  
 
+.has-success .form-control-feedback {
+  color:#fff;
+  background-color: green;
+  border-radius: 50%
+}
+.has-error .form-control-feedback {
+  color: #fff;
+  background-color: red;
+  border-radius: 50%;
+}
+.form-horizontal .has-feedback .form-control-feedback {
+  top: 8px !important;
+  right: 22px !important;
+  font-size: 1.5em;
+}
+.has-error .help-block {
+  background-color: red;
+  color:#fff;
+  padding:10px;
+  border-radius: 10px;
+}
 
 /* ==========================================================================
    Media Queries
