@@ -139,6 +139,24 @@ section#slider img {
   margin: 0 auto;  
 }
 
+.blue-circle div {
+  float: left;
+  width: 100%;
+  padding-top: 45%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  text-align: center;
+  color: #fff;
+}
+    
+.blue-circle div i {
+  font-size: 3em;
+}
+#features .blue-circle div i {
+  font-size: 2em;
+}
+  
+
 #about .blue-circle {
   width: 50%;
   padding-bottom: 50%;  
@@ -222,6 +240,15 @@ section#download .platforms > div {
   padding-left: 50px;
   color: #0c243d;    
 }
+
+section#download .platforms i {
+  font-size: 2.5em;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
+
 section#support {
   padding-bottom: 0;
   background-color: #1a3d61;
