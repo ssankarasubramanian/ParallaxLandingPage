@@ -9,22 +9,26 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
 
         <header>
           <nav class="navbar navbar-default navbar-fixed-top"> 
             <div class="container">   
               <div class="navbar-collapse collapse">                       
                 <ul class="nav nav-justified">
-                  <li><a href="#">About the App</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Screenshots</a></li>
-                  <li><a href="#">Download</a></li>
-                  <li><a href="#">Support</a></li>                 
+                  <li><a data-scroll href="#about">About the App</a></li>
+                  <li><a data-scroll href="#features">Features</a></li>
+                  <li><a data-scroll href="#screenshots">Screenshots</a></li>
+                  <li><a data-scroll href="#download">Download</a></li>
+                  <li><a data-scroll href="#support">Support</a></li>                 
                 </ul>                    
               </div>                            
             </div><!-- container div-->
@@ -43,7 +47,7 @@
         </header>
         
         <!-- Sldier section using bootstrap carousel -->
-        <section id="slider" class="carousel slide" data-ride="carousel">
+        <section id="slider" class="carousel slide" data-ride="carousel" data-interval="4000">
           <div class="carousel-inner">
             
             <div class="item active">
@@ -81,26 +85,41 @@
             <div class="row">
 
                 <div class="col-sm-4">
-                  <div class="blue-circle"></div>                
+                  <div class="blue-circle animation1">
+                    <div>
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-google-plus"></i>
+                    </div>
+                  </div>                
                   <h3 class="text-uppercase text-center">Facebook & Twitter</h3>
                   <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div>
 
                 <div class="col-sm-4">
-                  <div class="blue-circle"></div>                
+                  <div class="blue-circle animation2">
+                    <div>
+                      <i class="fa fa-refresh fa-spin"></i>
+                    </div>
+                  </div>                
                   <h3 class="text-uppercase text-center">Online Support</h3>
                   <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div>
 
                 <div class="col-sm-4">
-                  <div class="blue-circle"></div>                
+                  <div class="blue-circle animation3">
+                    <div>
+                      <i class="fa fa-apple"></i>
+                      <i class="fa fa-android"></i>
+                    </div>                    
+                  </div>                
                   <h3 class="text-uppercase text-center">iOS & Android</h3>
                   <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                 </div> 
             </div> <!-- Row div -->
           </div> <!-- container closing div -->         
         </section> <!-- #about section -->
-        <section id="featres" class="features">
+        <section id="features" class="features">
           <h2 class="text-center text-uppercase">Features</h2>
           <div class="container">
             <div class="row">              
@@ -108,11 +127,16 @@
 
                   <div class="item-feature row">
                     <div class="content col-sm-8">
-                      <h4>Facebook & Twiiter</h4>
+                      <h4>Facebook & Twitter</h4>
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation1">  
+                        <div>
+                          <i class="fa fa-facebook"></i>
+                          <i class="fa fa-twitter"></i>
+                          <i class="fa fa-google-plus"></i>
+                        </div>                    
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
@@ -123,7 +147,10 @@
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation1">  
+                        <div>
+                          <i class="fa fa-user"></i>
+                        </div>                                          
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
@@ -134,7 +161,10 @@
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation1">
+                        <div>
+                          <i class="fa fa-ticket"></i>
+                        </div>                                             
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
@@ -145,23 +175,29 @@
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation1">  
+                        <div>
+                          <i class="fa fa-video-camera"></i>
+                        </div>                                          
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
 
                   <div class="item-feature row">
                     <div class="content col-sm-8">
-                      <h4>Check Seat Avaiability</h4>
+                      <h4>Check Seat Availability</h4>
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation1">
+                        <div>
+                          <i class="fa fa-check-circle-o"></i>
+                        </div>                                            
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
                 </div>
-                <div class="features-image col-sm-4">
+                <div class="features-image text-center col-sm-4">
                   <img src="img/features.png">
                 </div>
                 <div class="right-features col-sm-4">
@@ -172,7 +208,10 @@
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4 col-sm-pull-8">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation2">       
+                        <div>
+                          <i class="fa fa-credit-card"></i>
+                        </div>                                      
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
@@ -183,18 +222,24 @@
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4 col-sm-pull-8">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation2"> 
+                        <div>
+                          <i class="fa fa-thumbs-up"></i>
+                        </div>                                            
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
 
                   <div class="item-feature row">
                     <div class="content col-sm-8 col-sm-push-4 text-right">
-                      <h4>Earb Reward Points</h4>
+                      <h4>Earn Reward Points</h4>
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4 col-sm-pull-8">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation2">       
+                        <div>
+                          <i class="fa fa-exchange"></i>
+                        </div>                                      
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
@@ -205,7 +250,10 @@
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4 col-sm-pull-8">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation2">  
+                        <div>
+                          <i class="fa fa-check-square-o"></i>
+                        </div>                                           
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
@@ -216,7 +264,10 @@
                       <p>Aenean commodo ligula eget dolor. Aenean massa.</p>                    
                     </div>    
                     <div class="col-sm-4 col-sm-pull-8">
-                      <div class="blue-circle">                      
+                      <div class="blue-circle animation2">   
+                        <div>
+                          <i class="fa fa-tag"></i>
+                        </div>                                          
                       </div>
                     </div>                    
                   </div> <!-- #item-feature div -->
@@ -230,19 +281,19 @@
 
           <div class="container">
             <div class="row">
-                  <div class="col-sm-4">  
+                  <div class="col-sm-4 animation1">  
                     <a href="#modal" data-toggle="modal" data-image-url="img/modal_tickets.png">
                       <img class="img-responsive" src="img/modal_tickets.png" alt="">                      
                     </a>                                      
                   </div>
 
-                  <div class="col-sm-4">                                     
+                  <div class="col-sm-4 animation2">                                     
                     <a href="#modal" data-toggle="modal" data-image-url="img/modal_trailers.png">
                       <img class="img-responsive" src="img/modal_trailers.png" alt="">                    
                     </a>
                   </div>
 
-                  <div class="col-sm-4">
+                  <div class="col-sm-4 animation3">
                     <a href="#modal" data-toggle="modal" data-image-url="img/modal_points.png">
                       <img class="img-responsive" src="img/modal_points.png" alt="">                                          
                     </a>                                  
@@ -251,7 +302,7 @@
           </div><!-- container div -->
           
           <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labeleldby="modal" aria-hidden="true">
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 <img src="#">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>              
             </div>            
@@ -270,21 +321,23 @@
             <div class="row">
                 <div class="content-downloads clearfix">
                   <div class="phone">
-                    <img src="img/download.png" class="img-responsive">                             
+                    <img src="img/download.png" class="img-responsive animation1">                             
                   </div><!-- .phone div -->
                   
                   <div class="downloads-empty"></div>
                   
-                  <div class="container">
+                  <div class="container download-text">
                     <div class="row">
                        <div class="col-sm-5 col-sm-offset-7">
                            <h2 class="text-center text-uppercase">Choose your platform</h2>
                            
                            <section class="platforms text-center">
-                               <div class="col-md-5 col-sm-6">
+                               <div class="col-md-5 col-sm-6 animation2">
+                                   <i class="fa fa-apple"></i>   
                                    Download for <b>Apple iOS</b>
                                </div>
-                               <div class="col-md-5 col-sm-6">
+                               <div class="col-md-5 col-md-offset-1 col-sm-6 animation3">
+                                   <i class="fa fa-android"></i> 
                                    Download for <b>Android</b>
                                </div>
                            </section>
@@ -311,7 +364,7 @@
                          </div>
                          
                          <div class="form-group">
-                           <input class="form-control" type="text" placeholder="Email" name="email">                                                     
+                           <input class="form-control" type="email" placeholder="Email" name="email">                                                     
                          </div>
                          
                          <div class="form-group">
@@ -339,6 +392,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/jquery.waypoints.js"></script>
 
         <script src="js/main.js"></script>
     </body>
