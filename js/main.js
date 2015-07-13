@@ -4,7 +4,7 @@ $(document).ready(function(){
     });
   
     var nav = $('.navbar-fixed-top');
-  var distance = $('.navbar-fixed-top').offset();
+    var distance = $('.navbar-fixed-top').offset();
   
     if (distance.top >= 300) {
       nav.addClass('effect');
@@ -19,6 +19,20 @@ $(document).ready(function(){
       } else {        
         nav.removeClass('effect');        
       }
+      
+    });
+  
+     $('#about .blue-circle').waypoint(function(){
+      $('#about .blue-circle').addClass('animated fadeInUp')   
+    }, {
+      offset: '50%'
+      
+    });
+    
+    $('.features-image img').waypoint(function(){
+      $('.features-image img').addClass('animated flip')   
+    }, {
+      offset: '20%'
       
     });
               

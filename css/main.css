@@ -114,6 +114,7 @@ h2:after,h3:after{
 }
 
 .nav>li.active {
+  
   background-color: #08182d;
   transition: 1s all ease;
 }
@@ -315,6 +316,29 @@ footer p {
   color: #fff;
   margin-bottom: 0;
   
+}
+
+/*** ANIMATIONS ***/
+
+.animation1,
+.animation2,
+.animation3 {
+  opacity :0;
+}
+
+
+.animation1 {
+
+}
+
+.animation2 {
+  animation-delay: .3s;
+  -webkit-animation-delay:.3s;
+}
+
+.animation3 {
+  animation-delay: .6s;
+  -webkit-animation-delay: .6s;
 }
   
 
