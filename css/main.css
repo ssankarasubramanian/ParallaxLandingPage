@@ -377,6 +377,61 @@ footer p {
        (min-resolution: 120dpi) {
 
 }
+@media(max-width:767px){
+	.navbar-default .navbar-collapse{
+		border: none;
+	}
+	.navbar-collapse.in, .collapsing{
+		background-color: #112741;
+	}
+	.navbar-default .navbar-toggle:hover {
+		background: transparent;
+	}
+	.navbar-default .navbar-toggle:focus {
+		background-color: #112741;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	#about .blue-circle, .blue-circle {
+		width:50%;
+		padding-bottom: 50%;
+	}
+	.features-image {
+		text-align: center;
+	}
+	section#features h4, 
+	section#features p {
+		text-align: center;
+	}
+	
+	section#download .content-downloads {
+		height: 600px;
+	}
+	section#download div .phone,
+	section#download .downloads-empty {
+		width: 100%;
+	}
+	section#download .downloads-empty{
+		position: relative;
+	}
+	section#download .download-text{
+		z-index:10;
+		top: 600px;
+	}
+	
+	section#download .platforms > div{
+		margin-bottom: 10px;
+	}
+	section#download .platforms i {
+		top:2px;
+	}
+		
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
 
 /* ==========================================================================
    Helper classes
